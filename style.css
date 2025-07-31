@@ -1613,3 +1613,18 @@ body {
         max-height: none;
     }
 }
+
+/* Circular Favicon Styles */
+link[rel="icon"] {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Alternative approach for circular favicon */
+.favicon-circular {
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+}
