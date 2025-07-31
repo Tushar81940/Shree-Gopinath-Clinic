@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shri Gopinath Dental Care - Dr. Sudha Singh</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <div class="logo">
+                    <img src="logo.jpeg" alt="Shri Gopinath Dental Care Logo" class="logo-image">
+                </div>
+                <div class="brand-text">
+                    <h2>Shri Gopinath Dental Care</h2>
+                    <p>Dr. Sudha Singh</p> 
+                </div>
+            </div>
+
+            <div class="nav-links desktop-nav">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-cta desktop-nav">
+                <a href="tel:7579165045" class="btn btn-outline">
+                    <i class="fas fa-phone"></i>
+                    Call Now
+                </a>
+                <a href="https://wa.me/917579165045?text=Hi%2C%20I%20would%20like%20to%20book%20an%20appointment" class="btn btn-primary">
+                    <i class="fab fa-whatsapp"></i>
+                    Book Now
+                </a>
+            </div>
+
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <div class="mobile-menu-content">
+                <a href="#home" class="mobile-nav-link">Home</a>
+                <a href="#services" class="mobile-nav-link">Services</a>
+                <a href="#about" class="mobile-nav-link">About</a>
+                <a href="#gallery" class="mobile-nav-link">Gallery</a>
+                <a href="#contact" class="mobile-nav-link">Contact</a>
+                <div class="mobile-cta">
+                    <a href="tel:7579165045" class="btn btn-outline">
+                        <i class="fas fa-phone"></i>
+                        Call Now
+                    </a>
+                    <a href="https://wa.me/917579165045?text=Hi%2C%20I%20would%20like%20to%20book%20an%20appointment" class="btn btn-primary">
+                        <i class="fab fa-whatsapp"></i>
+                        Book Appointment
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Your Smile, Our Legacy
+                    <span class="hero-subtitle">15+ Years of Dental Care</span>
+                </h1>
+                
+                <p class="hero-lead">Led by Dr. Sudha Singh</p>
+                <p class="hero-description">Govt. Hospital Trained • UK Certified Implantologist • Now in Dehradun</p>
+                
+                <div class="hero-cta">
+                    <button class="btn btn-hero" onclick="bookAppointment()">
+                        <i class="fas fa-calendar"></i>
+                        Book Appointment
+                    </button>
+                    <a href="tel:7579165045" class="btn btn-outline-hero">
+                        <i class="fas fa-phone"></i>
+                        Call Now
+                    </a>
+                    <button class="btn btn-whatsapp" onclick="openWhatsApp()">
+                        <i class="fab fa-whatsapp"></i>
+                        WhatsApp Us
+                    </button>
+                </div>
+                
+                <div class="trust-indicators">
+                    <div class="trust-item">
+                        <div class="trust-number">15+</div>
+                        <div class="trust-label">Years Experience</div>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-number">100+</div>
+                        <div class="trust-label">Happy Patients</div>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-number">10+</div>
+                        <div class="trust-label">Govt. Hospital Years</div>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-number">UK</div>
+                        <div class="trust-label">Certified</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Why Choose Us</h2>
+            <p class="section-description">Experience the difference that 15+ years of expertise makes in dental care.</p>
+        </div>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-user-md"></i>
+                </div>
+                <h3>Expert Care</h3>
+                <p>15+ years of experience with government hospital training and UK certification.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3>Gentle Approach</h3>
+                <p>Painless procedures with a caring, patient-first approach to dental care.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Modern Technology</h3>
+                <p>Latest dental equipment and techniques for precise, effective treatment.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-smile"></i>
+                </div>
+                <h3>Beautiful Results</h3>
+                <p>Transform your smile with cosmetic dentistry and smile designing expertise.</p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Doctor Profile Section -->
+    <section id="about" class="doctor-profile">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meet Dr. Sudha Singh</h2>
+                <p class="section-description">Your trusted dental care provider with 15+ years of experience</p>
+            </div>
+            
+            <div class="doctor-content">
+                <div class="doctor-image">
+                    <img src="Doctor image/WhatsApp Image 2025-07-29 at 11.26.35 PM (1).jpeg" alt="Dr. Sudha Singh - Professional Dentist">
+                </div>
+                <div class="doctor-info">
+                    <h3>Dr. Sudha Singh</h3>
+                    <p class="doctor-title">UK Certified Implantologist</p>
+                    <p class="doctor-experience">15+ Years of Dental Excellence</p>
+                    
+                    <div class="doctor-qualifications">
+                        <h4>Qualifications & Experience</h4>
+                        <ul>
+                            <li>Government Hospital Trained</li>
+                            <li>UK Certified Implantologist</li>
+                            <li>15+ Years Clinical Experience</li>
+                            <li>Specialized in Advanced Dental Procedures</li>
+                            <li>Expert in Painless Dental Treatments</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="doctor-specialties">
+                        <h4>Specialties</h4>
+                        <div class="specialty-tags">
+                            <span class="tag">Dental Implants</span>
+                            <span class="tag">Root Canal Treatment</span>
+                            <span class="tag">Smile Designing</span>
+                            <span class="tag">Painless Extraction</span>
+                            <span class="tag">Orthodontic Treatment</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="certificates">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Certificates & Achievements</h2>
+                <p class="section-description">Recognized expertise and professional certifications</p>
+            </div>
+            
+            <div class="certificates-grid">
+                <div class="certificate-item">
+                    <img src="Certificates/WhatsApp Image 2025-07-29 at 11.26.37 PM.jpeg" alt="Professional Certificate">
+                    <div class="certificate-overlay">
+                        <h4>Professional Certification</h4>
+                        <p>Advanced Dental Training</p>
+                    </div>
+                </div>
+                <div class="certificate-item">
+                    <img src="Certificates/WhatsApp Image 2025-07-29 at 11.26.39 PM.jpeg" alt="Training Certificate">
+                    <div class="certificate-overlay">
+                        <h4>Specialized Training</h4>
+                        <p>Implantology Certification</p>
+                    </div>
+                </div>
+                <div class="certificate-item">
+                    <img src="Certificates/WhatsApp Image 2025-07-29 at 11.26.40 PM (1).jpeg" alt="Achievement Certificate">
+                    <div class="certificate-overlay">
+                        <h4>Professional Achievement</h4>
+                        <p>Excellence in Dental Care</p>
+                    </div>
+                </div>
+                <div class="certificate-item">
+                    <img src="Certificates/WhatsApp Image 2025-07-29 at 11.26.40 PM.jpeg" alt="Recognition Certificate">
+                    <div class="certificate-overlay">
+                        <h4>Professional Recognition</h4>
+                        <p>Dental Excellence Award</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment Section -->
+    <section class="equipment">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Modern Dental Equipment</h2>
+                <p class="section-description">State-of-the-art technology for precise and comfortable dental care</p>
+            </div>
+            
+            <div class="equipment-grid">
+                <div class="equipment-item">
+                    <img src="Equipments/WhatsApp Image 2025-07-29 at 11.26.37 PM (1).jpeg" alt="Dental Equipment">
+                    <div class="equipment-info">
+                        <h4>Advanced Dental Chair</h4>
+                        <p>Comfortable patient positioning for optimal treatment</p>
+                    </div>
+                </div>
+                <div class="equipment-item">
+                    <img src="Equipments/WhatsApp Image 2025-07-29 at 11.26.37 PM (2).jpeg" alt="Dental Equipment">
+                    <div class="equipment-info">
+                        <h4>Digital Imaging System</h4>
+                        <p>High-resolution imaging for accurate diagnosis</p>
+                    </div>
+                </div>
+                <div class="equipment-item">
+                    <img src="Equipments/WhatsApp Image 2025-07-29 at 11.26.38 PM.jpeg" alt="Dental Equipment">
+                    <div class="equipment-info">
+                        <h4>Sterilization Equipment</h4>
+                        <p>Advanced sterilization for patient safety</p>
+                    </div>
+                </div>
+                <div class="equipment-item">
+                    <img src="Equipments/WhatsApp Image 2025-07-29 at 11.26.39 PM.jpeg" alt="Dental Equipment">
+                    <div class="equipment-info">
+                        <h4>Treatment Instruments</h4>
+                        <p>Precision instruments for delicate procedures</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Gallery Section -->
+    <section id="gallery" class="services-gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services in Action</h2>
+                <p class="section-description">See our comprehensive dental services and treatments</p>
+            </div>
+            
+            <div class="services-gallery-grid">
+                <div class="service-gallery-item">
+                    <img src="Services/WhatsApp Image 2025-07-29 at 11.26.34 PM (2).jpeg" alt="Dental Service">
+                    <div class="service-gallery-overlay">
+                        <h4>Comprehensive Dental Care</h4>
+                        <p>Complete oral health solutions</p>
+                    </div>
+                </div>
+                <div class="service-gallery-item">
+                    <img src="Services/WhatsApp Image 2025-07-29 at 11.26.34 PM (3).jpeg" alt="Dental Service">
+                    <div class="service-gallery-overlay">
+                        <h4>Advanced Treatments</h4>
+                        <p>Modern dental procedures</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Dental Services</h2>
+                <p class="section-description">Comprehensive dental care using latest technology and techniques for optimal oral health and beautiful smiles.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Orthopantomograph</h3>
+                    <p>Advanced digital X-ray imaging for precise diagnosis</p>
+                    <ul class="service-features">
+                        <li>Digital imaging</li>
+                        <li>Accurate diagnosis</li>
+                        <li>Instant results</li>
+                    </ul>
+                    <button class="btn btn-outline know-more-btn" data-service="orthopantomograph">Know More</button>
+                    <div class="service-details" id="orthopantomograph-details">
+                        <div class="service-details-content">
+                            <h4>What is Orthopantomograph?</h4>
+                            <p>An Orthopantomograph (OPG) is a panoramic dental X-ray that captures the entire mouth in a single image.</p>
+                            
+                            <h4>Benefits:</h4>
+                            <ul>
+                                <li>Complete oral cavity view</li>
+                                <li>Detects hidden problems</li>
+                                <li>Essential for treatment planning</li>
+                            </ul>
+                            
+                            <div class="service-cta">
+                                <button class="btn btn-primary" onclick="bookAppointment()">Book Consultation</button>
+                                <button class="btn btn-outline" onclick="openWhatsApp()">Ask Questions</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Painless Extraction</h3>
+                    <p>Gentle tooth removal with minimal discomfort</p>
+                    <ul class="service-features">
+                        <li>Local anesthesia</li>
+                        <li>Gentle technique</li>
+                        <li>Quick recovery</li>
+                    </ul>
+                    <button class="btn btn-outline know-more-btn" data-service="extraction">Know More</button>
+                    <div class="service-details" id="extraction-details">
+                        <div class="service-details-content">
+                            <h4>What is Painless Extraction?</h4>
+                            <p>Painless tooth extraction removes damaged teeth with minimal discomfort using advanced techniques.</p>
+                            
+                            <h4>Our Approach:</h4>
+                            <ul>
+                                <li>Topical anesthesia</li>
+                                <li>Gentle techniques</li>
+                                <li>Quick healing</li>
+                            </ul>
+                            
+                            <div class="service-cta">
+                                <button class="btn btn-primary" onclick="bookAppointment()">Book Consultation</button>
+                                <button class="btn btn-outline" onclick="openWhatsApp()">Ask Questions</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Root Canal Treatment</h3>
+                    <p>Save your natural teeth with advanced RCT procedures</p>
+                    <ul class="service-features">
+                        <li>Painless procedure</li>
+                        <li>Single sitting</li>
+                        <li>High success rate</li>
+                    </ul>
+                    <button class="btn btn-outline know-more-btn" data-service="rct">Know More</button>
+                    <div class="service-details" id="rct-details">
+                        <div class="service-details-content">
+                            <h4>What is Root Canal Treatment?</h4>
+                            <p>Root Canal Treatment (RCT) removes infected pulp from inside the tooth and seals it to prevent further infection.</p>
+                            
+                            <h4>Why Choose Our RCT?</h4>
+                            <ul>
+                                <li>Advanced instruments</li>
+                                <li>Single sitting available</li>
+                                <li>95%+ success rate</li>
+                            </ul>
+                            
+                            <div class="service-cta">
+                                <button class="btn btn-primary" onclick="bookAppointment()">Book Consultation</button>
+                                <button class="btn btn-outline" onclick="openWhatsApp()">Ask Questions</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-circle"></i>
+                    </div>
+                    <h3>Dental Implants</h3>
+                    <p>Permanent tooth replacement with UK-certified expertise</p>
+                    <ul class="service-features">
+                        <li>UK certified</li>
+                        <li>Titanium implants</li>
+                        <li>Natural feel</li>
+                    </ul>
+                    <button class="btn btn-outline know-more-btn" data-service="implants">Know More</button>
+                    <div class="service-details" id="implants-details">
+                        <div class="service-details-content">
+                            <h4>What are Dental Implants?</h4>
+                            <p>Dental implants are titanium posts placed in the jawbone to replace missing teeth with a permanent, natural-looking solution.</p>
+                            
+                            <h4>Why Choose Our Implants?</h4>
+                            <ul>
+                                <li>UK-certified implantologist</li>
+                                <li>Premium titanium implants</li>
+                                <li>Natural look and feel</li>
+                            </ul>
+                            
+                            <div class="service-cta">
+                                <button class="btn btn-primary" onclick="bookAppointment()">Book Consultation</button>
+                                <button class="btn btn-outline" onclick="openWhatsApp()">Ask Questions</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <h3>Smile Designing</h3>
+                    <p>Transform your smile with cosmetic dentistry</p>
+                    <ul class="service-features">
+                        <li>Digital planning</li>
+                        <li>Natural results</li>
+                        <li>Confidence boost</li>
+                    </ul>
+                    <button class="btn btn-outline know-more-btn" data-service="smile">Know More</button>
+                    <div class="service-details" id="smile-details">
+                        <div class="service-details-content">
+                            <h4>What is Smile Designing?</h4>
+                            <p>Smile designing combines various cosmetic procedures to create a beautiful, harmonious smile that enhances your appearance.</p>
+                            
+                            <h4>Our Process:</h4>
+                            <ul>
+                                <li>Digital smile analysis</li>
+                                <li>Customized treatment plan</li>
+                                <li>Professional teeth whitening</li>
+                            </ul>
+                            
+                            <div class="service-cta">
+                                <button class="btn btn-primary" onclick="bookAppointment()">Book Consultation</button>
+                                <button class="btn btn-outline" onclick="openWhatsApp()">Ask Questions</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h3>Orthodontic Brackets</h3>
+                    <p>Straight teeth with modern braces technology</p>
+                    <ul class="service-features">
+                        <li>Metal/ceramic</li>
+                        <li>Comfortable fit</li>
+                        <li>Faster results</li>
+                    </ul>
+                    <button class="btn btn-outline know-more-btn" data-service="braces">Know More</button>
+                    <div class="service-details" id="braces-details">
+                        <div class="service-details-content">
+                            <h4>What are Orthodontic Brackets?</h4>
+                            <p>Orthodontic brackets are small attachments bonded to teeth that work with wires to gradually move teeth into proper alignment.</p>
+                            
+                            <h4>Types We Offer:</h4>
+                            <ul>
+                                <li>Metal brackets - Most affordable</li>
+                                <li>Ceramic brackets - Less visible</li>
+                                <li>Clear aligners - Removable option</li>
+                            </ul>
+                            
+                            <div class="service-cta">
+                                <button class="btn btn-primary" onclick="bookAppointment()">Book Consultation</button>
+                                <button class="btn btn-outline" onclick="openWhatsApp()">Ask Questions</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Complete Dentures</h3>
+                    <p>Restore your smile with comfortable dentures</p>
+                    <ul class="service-features">
+                        <li>Perfect fit</li>
+                        <li>Natural look</li>
+                        <li>Improved function</li>
+                    </ul>
+                    <button class="btn btn-outline know-more-btn" data-service="dentures">Know More</button>
+                    <div class="service-details" id="dentures-details">
+                        <div class="service-details-content">
+                            <h4>What are Complete Dentures?</h4>
+                            <p>Complete dentures are removable dental appliances that replace all missing teeth, restoring your ability to eat, speak, and smile.</p>
+                            
+                            <h4>Our Services:</h4>
+                            <ul>
+                                <li>Custom-fitted dentures</li>
+                                <li>Natural-looking teeth</li>
+                                <li>Comfortable base material</li>
+                            </ul>
+                            
+                            <div class="service-cta">
+                                <button class="btn btn-primary" onclick="bookAppointment()">Book Consultation</button>
+                                <button class="btn btn-outline" onclick="openWhatsApp()">Ask Questions</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tooth"></i> <!-- Changed to a tooth icon for Gum Treatment -->
+                    </div>
+                    <h3>Gum Treatment</h3>
+                    <p>Comprehensive periodontal care for healthy gums</p>
+                    <ul class="service-features">
+                        <li>Deep cleaning</li>
+                        <li>Gum therapy</li>
+                        <li>Preventive care</li>
+                    </ul>
+                    <button class="btn btn-outline know-more-btn" data-service="gum">Know More</button>
+                    <div class="service-details" id="gum-details">
+                        <div class="service-details-content">
+                            <h4>What is Gum Treatment?</h4>
+                            <p>Gum treatment (periodontal therapy) addresses gum disease and maintains gum health through various procedures.</p>
+                            
+                            <h4>Our Services:</h4>
+                            <ul>
+                                <li>Scaling and root planing</li>
+                                <li>Gum disease treatment</li>
+                                <li>Preventive gum care</li>
+                            </ul>
+                            
+                            <div class="service-cta">
+                                <button class="btn btn-primary" onclick="bookAppointment()">Book Consultation</button>
+                                <button class="btn btn-outline" onclick="openWhatsApp()">Ask Questions</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Patients Say</h2>
+                <p class="section-description">Real experiences from real patients who trusted us with their smiles.</p>
+            </div>
+            
+            <div class="testimonial-main">
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <blockquote class="testimonial-text">
+                        "Dr. Sudha helped my mother smile again pain-free. Her gentle approach and expertise made all the difference. The dental implants look and feel so natural!"
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <div class="author-name">Meera Sharma</div>
+                            <div class="author-location">Dehradun</div>
+                            <div class="author-treatment">Dental Implants</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-nav">
+                <button class="nav-dot active" data-index="0"></button>
+                <button class="nav-dot" data-index="1"></button>
+                <button class="nav-dot" data-index="2"></button>
+                <button class="nav-dot" data-index="3"></button>
+                <button class="nav-dot" data-index="4"></button>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-mini">
+                    <div class="mini-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Her hands are magic. I was terrified of dental procedures, but Dr. Sudha made my root canal completely painless. Highly recommend!"</p>
+                    <div class="mini-author">
+                        <span class="mini-name">Rajesh Kumar</span>
+                        <span class="mini-treatment">Root Canal</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-mini">
+                    <div class="mini-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The smile designing treatment transformed my confidence completely. Dr. Sudha understood exactly what I wanted and delivered perfect results."</p>
+                    <div class="mini-author">
+                        <span class="mini-name">Priya Patel</span>
+                        <span class="mini-treatment">Smile Designing</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-mini">
+                    <div class="mini-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"15 years of experience really shows! Professional, caring, and honest pricing. The entire family now comes here for dental care."</p>
+                    <div class="mini-author">
+                        <span class="mini-name">Vinod Singh</span>
+                        <span class="mini-treatment">Family Dentistry</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Appointment Section -->
+    <section id="contact" class="book-appointment">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Book Your Appointment</h2>
+                <p class="section-description">Ready to transform your smile? Schedule your consultation with Dr. Sudha Singh today.</p>
+            </div>
+            
+            <div class="appointment-content">
+                <div class="appointment-form">
+                    <form id="appointmentForm" onsubmit="handleAppointmentSubmit(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Needed *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="General Checkup">General Checkup</option>
+                                <option value="Dental Cleaning">Dental Cleaning</option>
+                                <option value="Root Canal Treatment">Root Canal Treatment</option>
+                                <option value="Dental Implants">Dental Implants</option>
+                                <option value="Smile Designing">Smile Designing</option>
+                                <option value="Orthodontic Brackets">Orthodontic Brackets</option>
+                                <option value="Complete Dentures">Complete Dentures</option>
+                                <option value="Gum Treatment">Gum Treatment</option>
+                                <option value="Painless Extraction">Painless Extraction</option>
+                                <option value="Orthopantomograph">Orthopantomograph</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Preferred Date *</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Preferred Time</label>
+                                <select id="time" name="time">
+                                    <option value="">Select time</option>
+                                    <option value="10:00 AM">10:00 AM</option>
+                                    <option value="10:30 AM">10:30 AM</option>
+                                    <option value="11:00 AM">11:00 AM</option>
+                                    <option value="11:30 AM">11:30 AM</option>
+                                    <option value="12:00 PM">12:00 PM</option>
+                                    <option value="12:30 PM">12:30 PM</option>
+                                    <option value="1:00 PM">1:00 PM</option>
+                                    <option value="1:30 PM">1:30 PM</option>
+                                    <option value="5:00 PM">5:00 PM</option>
+                                    <option value="5:30 PM">5:30 PM</option>
+                                    <option value="6:00 PM">6:00 PM</option>
+                                    <option value="6:30 PM">6:30 PM</option>
+                                    <option value="7:00 PM">7:00 PM</option>
+                                    <option value="7:30 PM">7:30 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Additional Message</label>
+                            <textarea id="message" name="message" rows="3"></textarea>
+                        </div>
+                        
+                        <button type="button" class="btn btn-cta" onclick="openWhatsAppWithFormData()">
+                            <i class="fab fa-whatsapp"></i>
+                            Book via WhatsApp
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="quick-contact">
+                        <a href="tel:7579165045" class="btn btn-hero">
+                            <i class="fas fa-phone"></i>
+                            Call Now: +91 7579165045
+                        </a>
+                        <a href="https://wa.me/917579165045" class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                            WhatsApp: +91 7579165045
+                        </a>
+                    </div>
+                    
+                    <div class="clinic-info">
+                        <h3>Clinic Information</h3>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <div class="info-label">Address</div>
+                                <div class="info-value">Shop No. 219, Indra Nagar Colony<br>Near Asian School, Dehradun</div>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <div class="info-label">Clinic Hours</div>
+                                <div class="info-value">Morning: 10:00 AM - 2:00 PM<br>Evening: 5:00 PM - 8:00 PM</div>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-calendar"></i>
+                            <div>
+                                <div class="info-label">Working Days</div>
+                                <div class="info-value">Monday to Saturday<br>Sunday: 9:30 AM -12:30 PM</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="emergency-contact">
+                        <h3>Emergency Contact</h3>
+                        <p>For dental emergencies outside clinic hours</p>
+                        <button class="btn btn-outline" onclick="callNow()">
+                            <i class="fas fa-phone"></i>
+                            Emergency Line
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Widget -->
+    <div class="floating-whatsapp">
+        <div class="whatsapp-widget" id="whatsappWidget">
+            <div class="widget-header">
+                <div class="widget-avatar">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="widget-info">
+                    <div class="widget-name">Dr. Sudha Singh</div>
+                    <div class="widget-status">● Online</div>
+                </div>
+                <button class="widget-close" onclick="toggleWhatsApp()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="widget-message">
+                <p>Hi! 👋 How can I help you today?</p>
+                <p class="widget-subtitle">Typically replies in a few minutes</p>
+            </div>
+            <button class="widget-action" onclick="openWhatsApp()">
+                Start Conversation
+            </button>
+        </div>
+        
+        <button class="floating-btn" onclick="openWhatsApp()">
+            <i class="fab fa-whatsapp"></i>
+        </button>
+    </div>
+
+    <!-- Mobile CTA -->
+    <div class="mobile-cta-bar">
+        <button class="mobile-cta-btn" onclick="callNow()">
+            📞 Call Now
+        </button>
+        <button class="mobile-cta-btn whatsapp" onclick="openWhatsApp()">
+            💬 WhatsApp
+        </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
