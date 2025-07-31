@@ -344,49 +344,9 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Initialize Know More functionality
-    initializeKnowMoreButtons();
 });
 
-// Know More button functionality
-function initializeKnowMoreButtons() {
-    const knowMoreButtons = document.querySelectorAll('.know-more-btn');
-    
-    knowMoreButtons.forEach(button => {
-        button.addEventListener('click', function(e) {
-            e.stopPropagation(); // Prevent card click event
-            
-            const serviceId = this.getAttribute('data-service');
-            const serviceDetails = document.getElementById(`${serviceId}-details`);
-            const isActive = serviceDetails.classList.contains('active');
-            
-            // Close all other open service details
-            document.querySelectorAll('.service-details').forEach(detail => {
-                detail.classList.remove('active');
-            });
-            
-            document.querySelectorAll('.know-more-btn').forEach(btn => {
-                btn.classList.remove('active');
-                btn.textContent = 'Know More';
-            });
-            
-            // Toggle current service details
-            if (!isActive) {
-                serviceDetails.classList.add('active');
-                this.classList.add('active');
-                this.textContent = 'Show Less';
-                
-                // Smooth scroll to the expanded content
-                setTimeout(() => {
-                    serviceDetails.scrollIntoView({ 
-                        behavior: 'smooth', 
-                        block: 'nearest' 
-                    });
-                }, 300);
-            }
-        });
-    });
-}
+
 
 // Intersection Observer for animations
 const observerOptions = {

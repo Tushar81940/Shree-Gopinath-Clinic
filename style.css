@@ -428,13 +428,27 @@ body {
     }
 }
 
+/* Hide Call Now and WhatsApp buttons on mobile devices */
+@media (max-width: 639px) {
+    .hide-on-mobile {
+        display: none !important;
+    }
+}
+
 .trust-indicators {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    /* color: rgba(255, 255, 255, 0.9);
-     */
-     color: gray;
+    gap: 2rem;
+    color: white;
+    margin-top: 2rem;
+    background: rgba(16, 185, 129, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 1rem;
+    padding: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (min-width: 768px) {
@@ -445,16 +459,31 @@ body {
 
 .trust-item {
     text-align: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.trust-item:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
 }
 
 .trust-number {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 700;
-    color: var(--accent-soft);
+    color: white;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .trust-label {
     font-size: 0.875rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 500;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 /* Why Choose Us Section */
@@ -620,83 +649,7 @@ body {
     margin-right: 0.5rem;
 }
 
-/* Service Details Expandable Content */
-.service-details {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease-in-out;
-    background-color: var(--primary-soft);
-    border-radius: 0.75rem;
-    margin-top: 1rem;
-}
 
-.service-details.active {
-    max-height: 1000px;
-}
-
-.service-details-content {
-    padding: 1.5rem;
-}
-
-.service-details-content h4 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 1.1rem;
-    color: var(--foreground);
-    margin-bottom: 0.75rem;
-    margin-top: 1.5rem;
-}
-
-.service-details-content h4:first-child {
-    margin-top: 0;
-}
-
-.service-details-content p {
-    color: var(--muted-foreground);
-    line-height: 1.6;
-    margin-bottom: 1rem;
-}
-
-.service-details-content ul {
-    list-style: none;
-    margin-bottom: 1.5rem;
-}
-
-.service-details-content li {
-    color: var(--muted-foreground);
-    margin-bottom: 0.5rem;
-    padding-left: 1.5rem;
-    position: relative;
-}
-
-.service-details-content li::before {
-    content: "✓";
-    position: absolute;
-    left: 0;
-    color: var(--primary);
-    font-weight: bold;
-}
-
-.service-cta {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1.5rem;
-    flex-wrap: wrap;
-}
-
-.service-cta .btn {
-    flex: 1;
-    min-width: 120px;
-}
-
-.know-more-btn {
-    transition: all 0.3s ease;
-}
-
-.know-more-btn.active {
-    background-color: var(--primary);
-    color: white;
-}
 
 .text-center {
     text-align: center;
@@ -1565,14 +1518,6 @@ body {
     
     .service-cta .btn {
         width: 100%;
-    }
-    
-    .service-details-content {
-        padding: 1rem;
-    }
-    
-    .service-details-content h4 {
-        font-size: 1rem;
     }
     
     .service-gallery-item img {
