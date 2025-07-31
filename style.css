@@ -309,6 +309,95 @@ body {
     }
 }
 
+/* Happy Patients Banner */
+.happy-patients-banner {
+    background: var(--primary-soft);
+    padding: 1.5rem 0;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.happy-patients-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="1.5" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="80" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="90" cy="90" r="1.5" fill="rgba(255,255,255,0.1)"/></svg>');
+    opacity: 0.3;
+}
+
+.banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-icon {
+    font-size: 2.5rem;
+    color: var(--primary);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.banner-text {
+    text-align: center;
+}
+
+.banner-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary);
+    line-height: 1;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.banner-label {
+    font-size: 1.25rem;
+    color: var(--foreground);
+    font-weight: 500;
+    margin-top: 0.25rem;
+}
+
+.banner-subtitle {
+    font-size: 0.875rem;
+    color: var(--muted-foreground);
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .banner-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .banner-number {
+        font-size: 2.5rem;
+    }
+    
+    .banner-label {
+        font-size: 1.125rem;
+    }
+    
+    .banner-icon {
+        font-size: 2rem;
+    }
+}
+
 /* Hero Section */
 .hero {
     position: relative;
