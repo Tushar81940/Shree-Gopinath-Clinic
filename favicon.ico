@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <clipPath id="rounded">
+      <rect x="0" y="0" width="48" height="48" rx="6" ry="6" />
+    </clipPath>
+  </defs>
+  <rect x="0" y="0" width="48" height="48" fill="#ffffff"/>
+  <image href="logo.jpeg" x="0" y="0" width="48" height="48" preserveAspectRatio="xMidYMid slice" clip-path="url(#rounded)"/>
+</svg>

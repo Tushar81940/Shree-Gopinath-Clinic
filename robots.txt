@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Ensure favicon is crawlable
+Allow: /logo.jpeg
